@@ -19,6 +19,18 @@
 
 ## Перелік команд (npm scripts)
 
-1. Встановлення залежностей (у чистій копії репозиторію):
-   ```bash
-   npm install
+```bash
+# Встановлення залежностей у чистій копії репозиторію
+npm install
+
+# Одноразова компіляція SCSS у CSS
+npm run scss:build
+
+# Запуск Sass у режимі спостереження за змінами (watch)
+npm run scss:watch
+
+# Генерація HTML-карток із data/products.json у index.html
+npm run build:cards
+
+# Повне фінальне збирання проєкту (компіляція стилів + генерація карток)
+npm run build
