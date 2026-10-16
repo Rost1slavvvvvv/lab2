@@ -1,0 +1,17 @@
+{
+  "name": "furnishop-lab2",
+  "version": "1.0.0",
+  "description": "Лабораторна робота 2: Керований npm-проєкт (SCSS + автогенерація карток з JSON)",
+  "main": "index.html",
+  "scripts": {
+    "scss:build": "sass src/scss/main.scss css/style.css --no-source-map",
+    "scss:watch": "sass --watch src/scss/main.scss css/style.css",
+    "build:cards": "node scripts/build-cards.js",
+    "build": "npm run scss:build && npm run build:cards"
+  },
+  "author": "Фурів Ростислав",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.0"
+  }
+}
